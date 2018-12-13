@@ -41,12 +41,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7C220B4479CD127073ECA146 /* Pods_LocalAuthenticator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalAuthenticator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80CF3DED9CC603D0440B7B5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		80CF3DED9CC603D0440B7B5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8C0BB26ECCE70538B9B13745 /* Pods_LocalAuthenticator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalAuthenticator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2941A0B925591768F203FC /* Pods-LocalAuthenticator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalAuthenticator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalAuthenticator_Tests/Pods-LocalAuthenticator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C626751B878D189AEF3F1CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C626751B878D189AEF3F1CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C9FBDE0FA6C902BFABB82F0B /* Pods-LocalAuthenticator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalAuthenticator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalAuthenticator_Example/Pods-LocalAuthenticator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE725EAF0E6D8886FB7115E8 /* LocalAuthenticator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LocalAuthenticator.podspec; path = ../LocalAuthenticator.podspec; sourceTree = "<group>"; };
+		DE725EAF0E6D8886FB7115E8 /* LocalAuthenticator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LocalAuthenticator.podspec; path = ../LocalAuthenticator.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				46144B2395E295B7B74A19E1 /* [CP] Embed Pods Frameworks */,
+				66A2C3C3EFE46B5F34031E66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +213,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DF9LCZNCAB;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -262,7 +263,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46144B2395E295B7B74A19E1 /* [CP] Embed Pods Frameworks */ = {
+		66A2C3C3EFE46B5F34031E66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -481,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -494,7 +495,9 @@
 			baseConfigurationReference = C9FBDE0FA6C902BFABB82F0B /* Pods-LocalAuthenticator_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DF9LCZNCAB;
 				INFOPLIST_FILE = LocalAuthenticator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -509,7 +512,9 @@
 			baseConfigurationReference = 4786FC64108515C0687E140A /* Pods-LocalAuthenticator_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DF9LCZNCAB;
 				INFOPLIST_FILE = LocalAuthenticator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
