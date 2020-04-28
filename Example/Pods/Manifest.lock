@@ -1,0 +1,27 @@
+PODS:
+  - LocalAuthenticator (0.1.0)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - LocalAuthenticator (from `../`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  LocalAuthenticator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LocalAuthenticator: 8b50bbf1f01a23b7b570fde2c742038538894079
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 9874857fb156b3149accc4cbedc797b66c6bdf31
+
+COCOAPODS: 1.8.4
