@@ -1,6 +1,0 @@
-framework module Pods_LocalAuthenticator_Tests {
-  umbrella header "Pods-LocalAuthenticator_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

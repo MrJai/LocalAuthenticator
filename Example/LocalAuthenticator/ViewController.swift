@@ -8,11 +8,19 @@
 
 import UIKit
 
+// Step1: Don't forget to import POD
+import LocalAuthenticator
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var authenticatorType: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if LocalAuthenticator.localAuthenticationConfigured() {
+            let deviceType = !LocalAuthenticator.faceIDAvailable() ? "Face" : "Touch"
+            authenticatorType.image = UIImage(named: "\(deviceType.lowercased())IdIcon")
+        }
     }
 
     override func didReceiveMemoryWarning() {
